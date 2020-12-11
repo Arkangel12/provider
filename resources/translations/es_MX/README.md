@@ -6,7 +6,7 @@
 [<img src="https://raw.githubusercontent.com/rrousselGit/provider/master/resources/flutter_favorite.png" width="200" />](https://flutter.dev/docs/development/packages-and-plugins/favorites)
 
 Un wrapper alrededor de [InheritedWidget] 
-para hacerlo más fácil de user y más utilizable.
+para hacerlo más fácil de usar y más utilizable.
 
 Al utilizar `provider` en lugar de escribir manualmente los [InheritedWidget], obtendrás:
 
@@ -558,9 +558,6 @@ https://gist.github.com/rrousselGit/4910f3125e41600df3c2577e26967c91
 
 #### Mi widget hace muchos rebuilds, que puedo hacer?
 
-Instead of `context.watch`, you can use `context.select` to listen only to a
-specific set of properties on the obtained object.
-
 En lugar de `context.watch`, puedes usar `context.select` para escuchar solo a un conjunto 
 especifico de propiedades en el objeto obtenido
 
@@ -639,7 +636,6 @@ Provider<Country>(
 #### Puedo consumir una interfaz y proveer una implementación?
 
 Sí, se debe dar una pista de tipo al compilador para indicar que la interfaz se consumirá, con la implementación prevista en create.
-
 
 ```dart
 abstract class ProviderInterface with ChangeNotifier {
